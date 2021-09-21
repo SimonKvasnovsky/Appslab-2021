@@ -3,6 +3,6 @@ package com;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello appslab 2020! haaa");
+        System.out.println("Hello appslab 2020! ");
     }
 }
