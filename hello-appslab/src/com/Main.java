@@ -1,8 +1,26 @@
 package com;
-
+import java.util.Scanner;
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello appslab 2020! haaa");
+    public static void main(String[] args)
+    {
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter number of total slices: ");
+        int totalSlices = in.nextInt();
+        System.out.print("Enter number of people: ");
+        int numberOfPeople = in.nextInt();
+        System.out.print("Enter of slices each: ");
+        int slicesEach = in.nextInt();
+
+
+        if (numberOfPeople*slicesEach<=totalSlices)
+        {
+            System.out.println("(" + totalSlices +","+ numberOfPeople +","+ slicesEach + ")" + " It is true ");
+        }
+        else {
+            System.out.println("(" + totalSlices +","+ numberOfPeople +","+ slicesEach + ")" + " It is false ");
+        }
     }
 }
