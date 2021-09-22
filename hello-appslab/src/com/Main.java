@@ -3,6 +3,11 @@ package com;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello appslab 2020! haaa");
+        double heightOfStep = 0.3;
+        double lenghtOfStep = 0.2;
+        double towerHeight = 25;
+        double numberOfSteps = (towerHeight/ heightOfStep) ;
+        double result = numberOfSteps * (heightOfStep+lenghtOfStep) ;
+        System.out.println("Total distance is " + result);
     }
 }
