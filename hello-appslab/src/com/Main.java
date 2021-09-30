@@ -16,7 +16,7 @@ public class Main {
         }
         else
         {
-            System.out.println("false");
+             System.out.println("false");
         }
         boolean contains = Arrays.stream(a1).anyMatch("A"::equals) && Arrays.stream(a2).anyMatch("A"::equals) || Arrays.stream(a1).anyMatch("1"::equals) && Arrays.stream(a2).anyMatch("1"::equals);
 
