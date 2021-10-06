@@ -1,28 +1,24 @@
 package com;
-
+import java.util.*;
+import java.io.*;
 public class Main {
 
-    public static void main(String[] args)
-    {
-        String one = "abc";
-        boolean bc = one.contains("bc");
-        if(bc)
-        {
-            System.out.println(bc);;
-        }
-        else
-        {
-            System.out.println(false);
-        }
+    public static void main(String[] args) throws Exception{
 
-        
-        String two = "Car";
-        if(two.endsWith("ar"))
-        {
-            System.out.println(true);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int odd=0,even=0,sub=0;
+        int[] arr = new int[n];
+        for(int i = 0; i<n;i++){
+            arr[i] = sc.nextInt();
+            if(i%2==0){
+                even+=arr[i];
+            }
+            else{
+                odd+=arr[i];
+            }
         }
-        else {
-            System.out.println(false);
-        }
+        sub = Math.abs(even-odd);
+        System.out.println(sub);
     }
 }
